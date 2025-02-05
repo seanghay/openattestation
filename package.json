@@ -1,0 +1,24 @@
+{
+  "name": "speedy-oa",
+  "type": "module",
+  "description": "A faster and smaller Open Attestation",
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "repository": "seanghay/speedy-oa",
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "flat": "^6.0.1",
+    "js-sha3": "^0.9.3",
+    "jsonschema": "^1.5.0",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "ava": "^6.2.0"
+  },
+  "files": [
+    "src"
+  ]
+}
