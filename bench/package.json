@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@govtechsg/open-attestation": "^6.9.7",
+    "benchmark": "^2.1.4",
+    "openattestation": "file:.."
+  }
+}

@@ -92,12 +92,17 @@ export class MerkleTree {
 }
 
 export function checkProof(_proof, _root, _element) {
-  const proof = _proof.map((step) => hashToBuffer(step));
+  const proof = [];
+  for (const step of _proof) {
+    proof.push(hashToBuffer(step));
+  }
   const root = hashToBuffer(_root);
   const element = hashToBuffer(_element);
+  
   const proofRoot = proof.reduce(
     (hash, pair) => combineHashBuffers(hash, pair),
     element,
   );
+
   return root.equals(proofRoot);
 }
