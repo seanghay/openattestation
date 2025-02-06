@@ -11,9 +11,8 @@ export function flattenHashArray(data) {
       return key;
     },
   });
-
+  
   const items = [];
-
   for (const k in flattenData) {
     if (k === undefined) continue;
     const v = flattenData[k];

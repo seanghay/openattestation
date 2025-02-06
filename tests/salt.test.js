@@ -8,7 +8,7 @@ import {
   unsalt,
   unsaltData,
   uuidSalt,
-} from "../src/salt.js";
+} from "../src/index.js";
 
 const someObj = {
   keyA: "value 1",

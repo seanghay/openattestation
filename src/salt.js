@@ -4,7 +4,6 @@ const UUIDV4_LENGTH = 37;
 const PRIMITIVE_TYPES = ["string", "number", "boolean", "undefined"];
 
 export function deepMap(value, fn) {
-  
   if (PRIMITIVE_TYPES.includes(typeof value) || value === null) {
     if (fn == null) return value;
     return fn(value);
@@ -97,4 +96,8 @@ export function saltData(data) {
 
 export function unsaltData(data) {
   return deepMap(data, unsalt);
+}
+
+export function getData(document) {
+  return unsaltData(document.data);
 }

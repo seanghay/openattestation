@@ -1,5 +1,8 @@
 {
-  "include": ["src/**/*"],
+  "include": [
+    "src/**/*",
+    "tests/**/*"
+  ],
   "compilerOptions": {
     "moduleResolution": "nodenext",
     "module": "NodeNext"
