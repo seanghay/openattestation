@@ -1,0 +1,7 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "moduleResolution": "nodenext",
+    "module": "NodeNext"
+  }
+}
